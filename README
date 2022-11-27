@@ -1,0 +1,10 @@
+This script can be used to take a backup of the full /etc folder of a RHVH host. 
+Since all the configurations of a host, including RHV related confs and basic OS related configurations (network configs, partitions, multipath configs etc) are in /etc folder taking a full /etc folder backup to a remote location before a change would help to restore the RHV hosts in a disaster situation or to roll back a change. 
+
+The script verified in RHV 4.3 environment
+
+USAGE
+=====
+
+sh backup_rhvh_config.sh <IP address/ hostname of the RHVH host>
+ex: sh backup_rhvh_config.sh 10.10.10.1
